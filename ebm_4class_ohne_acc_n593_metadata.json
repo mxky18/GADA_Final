@@ -1,0 +1,49 @@
+{
+  "variant": "ohne ACC",
+  "n_features": 16,
+  "feature_cols": [
+    "hr_mean",
+    "hr_std",
+    "mean_tonic_eda",
+    "std_tonic_eda",
+    "std_phasic_eda",
+    "tonic_ratio_down",
+    "peaks_density",
+    "mean_recoverytime",
+    "max_ibi",
+    "min_ibi",
+    "ibi_mean",
+    "rmssd",
+    "LF_n",
+    "temp_mean",
+    "temp_std",
+    "temp_slope"
+  ],
+  "class_order": [
+    "rest",
+    "stress",
+    "aerobic",
+    "sprint"
+  ],
+  "class_names_de": [
+    "Ruhe",
+    "Stress",
+    "Aerob",
+    "Anaerob"
+  ],
+  "metrics_losocv": {
+    "accuracy": 0.7537942664418212,
+    "f1_macro": 0.756213236109356,
+    "precision_macro": 0.7514341081454718,
+    "recall_macro": 0.7632126543042036,
+    "roc_auc_ovr_macro": 0.9204410544918995
+  },
+  "per_class_f1_losocv": {
+    "Ruhe": 0.7712418300653595,
+    "Stress": 0.7137809187279152,
+    "Aerob": 0.7493540051679587,
+    "Anaerob": 0.7904761904761904
+  },
+  "n_samples": 593,
+  "n_subjects": 31
+}

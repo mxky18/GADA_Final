@@ -1,0 +1,54 @@
+{
+  "variant": "mit ACC",
+  "n_features": 21,
+  "feature_cols": [
+    "hr_mean",
+    "hr_std",
+    "mean_tonic_eda",
+    "std_tonic_eda",
+    "std_phasic_eda",
+    "tonic_ratio_down",
+    "peaks_density",
+    "mean_recoverytime",
+    "max_ibi",
+    "min_ibi",
+    "ibi_mean",
+    "rmssd",
+    "LF_n",
+    "x_std",
+    "y_std",
+    "z_std",
+    "acc_mean",
+    "acc_ratio_down",
+    "temp_mean",
+    "temp_std",
+    "temp_slope"
+  ],
+  "class_order": [
+    "rest",
+    "stress",
+    "aerobic",
+    "sprint"
+  ],
+  "class_names_de": [
+    "Ruhe",
+    "Stress",
+    "Aerob",
+    "Anaerob"
+  ],
+  "metrics_losocv": {
+    "accuracy": 0.8650927487352446,
+    "f1_macro": 0.8624947082429847,
+    "precision_macro": 0.8620951870161365,
+    "recall_macro": 0.8629616843652783,
+    "roc_auc_ovr_macro": 0.9798891322160512
+  },
+  "per_class_f1_losocv": {
+    "Ruhe": 0.842809364548495,
+    "Stress": 0.823943661971831,
+    "Aerob": 0.9032258064516129,
+    "Anaerob": 0.88
+  },
+  "n_samples": 593,
+  "n_subjects": 31
+}
